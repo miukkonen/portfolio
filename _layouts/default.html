@@ -76,7 +76,7 @@
       <div class="navbar-brand">
         
         <a class="navbar-item" href="/jekyll-bulma-starter/">
-          Github Pages Starter Template
+          {{ site.title }}
         </a>
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
@@ -93,9 +93,10 @@
         
         <div class="navbar-end">
           
-          <a href="/jekyll-bulma-starter/" class="navbar-item">Front page</a>
-          <a href="/jekyll-bulma-starter/about" class="navbar-item">Sub Page</a>
-          <a href="/jekyll-bulma-starter/blog" class="navbar-item">Blog</a>
+          <a href="/" class="navbar-item">Esittely</a>
+          <a href="/kokemus/" class="navbar-item">Työkokemus</a>
+          <a href="/projektit/" class="navbar-item">Projektit</a>
+          <a href="/blogi/" class="navbar-item">Blogi</a>
 
         </div>
 
@@ -111,18 +112,12 @@
 
 
 
-    <section class="section">
-
-      <div class="column is-three-fifths is-offset-one-fifth">
 
 
-      	{{ content }}
+    {{ content }}
 
 
 
-      </div>
-
-    </section>
 
 
 
@@ -136,9 +131,9 @@
 
         <div class="content has-text-centered">
         
-          <h1>Jekyll+Bulma starter template &copy; 2019</h1>
+          <h1>Mikko Oikkonen &copy; {{ 'now' | date: "%Y" }}</h1>
           
-          <a href="https://mmoi.github.io/jekyll-bulma-starter/">https://mmoi.github.io/jekyll-bulma-starter/</a>
+          <a href="https://mmoi.github.io/jekyll-bulma-starter/">https://mmoi.github.io/</a>
       		
         </div>
           
