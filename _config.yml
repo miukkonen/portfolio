@@ -3,4 +3,6 @@ markdown: kramdown
 
 permalink: /blog/:year/:month/:day/:title
 
-site.title: Jekyll Bulma Github Pages starter template
+site.title: Jekyll Bulma Starter Template
+
+site.base_url: "https://mmoi.github.io/jekyll-bulma-starter/"
