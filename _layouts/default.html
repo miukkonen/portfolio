@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <script>
+      
+
+        // makes hamburger menu work
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+          // Get all "navbar-burger" elements
+          var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+          // Check if there are any navbar burgers
+          if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(function ($el) {
+              $el.addEventListener('click', function () {
+
+                // Get the target from the "data-target" attribute
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+
+                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                $el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+              });
+            });
+          }
+
+        });
+
+
+    </script>
+
+
+    <style>
+
+      @import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+      a, h1, p { font-family: 'Raleway', 'Helvetica Neue', sans-serif; }
+
+      p { margin-bottom: 20px; }
+
+    </style>
+
+
+  </head>
+
+  <body>
+
+
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+
+      <!-- BRAND -->
+
+      <div class="navbar-brand">
+        
+        <a class="navbar-item" href="/">
+          Github Pages Starter Template
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+      <!-- MENU -->
+
+      <div class="navbar-menu" id="navMenu">
+        
+        <div class="navbar-end">
+          
+          <a href="/" class="navbar-item">Front page</a>
+          <a href="/page" class="navbar-item">Sub Page</a>
+          <a href="/blog" class="navbar-item">Blog</a>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+    <section class="section">
+
+      <div class="container">
+
+
+      	{{ content }}
+
+
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+  	<footer class="footer">
+
+      <div class="container">
+
+        <div class="content has-text-centered">
+        
+          <h1>Jekyll+Bulma starter template &copy; 2019</h1>
+          
+          <ul>
+         		<li><a href="https://github.com/">github.com</li>
+      		</ul>
+        
+        </div>
+          
+      </div>
+
+  	</footer>
+
+
+
+
+  </body>
+
+
+</html>

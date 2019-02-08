@@ -1,0 +1,6 @@
+name: Jekyll Bulma Github pages starter template
+markdown: kramdown
+
+permalink: /blog/:year/:month/:day/:title
+
+site.title: Jekyll Bulma Github Pages starter template
