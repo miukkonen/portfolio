@@ -8,20 +8,18 @@ title: Portfolio | Mikko Oikkonen
 <section class="hero is-primary is-fullheight-with-navbar" style="background: #ffffff url('img/coffee-background.jpg') no-repeat scroll center 40%; background-size: cover;">
 
   
-  <div class="hero-body">
+  <div class="hero-body with-bg-opacity">
 
 	<div class="container has-text-centered" style="max-width: 765px;">
-      
-
-		<figure class="image is-128x128">
-  			<img class="is-rounded" src="img/oma-profiilikuva-web.jpg">
-		</figure>
-
-
+      	
+      	<img src="img/oma-profiilikuva-web-500.jpg" style="width: 280px; border-radius: 290486px;">
+		
       	<h1 class="title">Mikko Oikkonen</h1>
-      	<h2 class="subtitle">Työnantajan paras kaveri</h2>
+      	<h2 class="subtitle">Työnantajan paras ystävä</h2>
     
-      	<p>Olen Mikko Oikkonen, ohjelmistoalan moniosaaja Tampereelta. Tämä on portfoliosivuni jossa esittelen työkokemustani ja projektejani. Blogissa kirjoittelen erilaisista ammatillisista tai sitä lähellä olevista aiheista. Jos olet kiinnostunut kutsu minut työhaastatteluun!</p>
+      	<p>Olen Mikko Oikkonen, ohjelmistoalan moniosaaja Tampereelta. Tämä on portfoliosivuni jossa esittelen työkokemustani ja projektejani. Blogissa kirjoittelen erilaisista ammatillisista tai sitä lähellä olevista aiheista. Olen innostunut uusista haasteista ja uuden oppimisesta. Haluaisin olla osa osaavaa tiimiä jossa toteuttaisimme yhdessä uusia menestysohjelmistoja. Kutsu minut työhaastatteluun!</p>
+
+      	<br />
 
       	<a href="#yhteystiedot" class="button is-large is-success">Kutsu Mikko työhaastatteluun</a>
 
@@ -29,8 +27,25 @@ title: Portfolio | Mikko Oikkonen
   
   </div>
 
+
+
+
 </section>
 
+
+
+<section class="section">
+
+	<div class="has-text-centered">
+
+
+		<p>Hei</p>
+
+
+	</div>
+
+
+</section>
 
 
 
@@ -81,7 +96,7 @@ title: Portfolio | Mikko Oikkonen
 <section class="hero is-primary is-fullheight" style="background: #ffffff url('img/code-background.jpg') no-repeat scroll center 40%; background-size: cover;">
 
   
-  <div class="hero-body">
+  <div class="hero-body with-bg-opacity">
 
 	<div class="container">
       

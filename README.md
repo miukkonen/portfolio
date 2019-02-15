@@ -1,3 +1,3 @@
-# jekyll-bulma-starter
+# Mikkoo.io
 
-Starter template for github pages using Bulma for styles.
+Portfolio

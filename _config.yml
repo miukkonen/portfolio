@@ -6,3 +6,6 @@ permalink: /blog/:year/:month/:day/:title
 title: mikkoo.io
 
 site.base_url: "https://mmoi.github.io/jekyll-bulma-starter/"
+
+
+exclude: [sass]
