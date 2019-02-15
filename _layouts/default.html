@@ -10,11 +10,11 @@
 
     <title>{{ page.title }}</title>
 
-    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/site.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
 
-    <script src="/js/hamburger.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/js/hamburger.js"></script>
 
 
   </head>
@@ -32,7 +32,7 @@
 
       <div class="navbar-brand">
         
-        <a class="navbar-item" href="/">
+        <a class="navbar-item" href="{{ site.url }}{{ site.baseurl }}">
           {{ site.title }}
         </a>
 
@@ -50,10 +50,10 @@
         
         <div class="navbar-end">
           
-          <a href="/" class="navbar-item">Esittely</a>
-          <a href="/kokemus/" class="navbar-item">Työkokemus</a>
-          <a href="/projektit/" class="navbar-item">Projektit</a>
-          <a href="/blogi/" class="navbar-item">Blogi</a>
+          <a href="{{ site.url }}{{ site.baseurl }}" class="navbar-item">Esittely</a>
+          <a href="{{ site.url }}{{ site.baseurl }}kokemus/" class="navbar-item">Työkokemus</a>
+          <a href="{{ site.url }}{{ site.baseurl }}projektit/" class="navbar-item">Projektit</a>
+          <a href="{{ site.url }}{{ site.baseurl }}blogi/" class="navbar-item">Blogi</a>
 
         </div>
 
@@ -90,7 +90,7 @@
         
           <h1>Mikko Oikkonen &copy; {{ 'now' | date: "%Y" }}</h1>
           
-          <a href="https://mmoi.github.io/jekyll-bulma-starter/">https://mmoi.github.io/</a>
+          <a href="{{ site.url }}{{ site.baseurl }}">{{ site.url }}{{ site.baseurl }}</a>
       		
         </div>
           

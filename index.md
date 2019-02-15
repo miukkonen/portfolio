@@ -14,10 +14,10 @@ title: Portfolio | Mikko Oikkonen
       	
       	<img src="img/oma-profiilikuva-web-500.jpg" style="width: 280px; border-radius: 290486px;">
 		
-      	<h1 class="title">Mikko Oikkonen</h1>
-      	<h2 class="subtitle">Työnantajan paras ystävä</h2>
+      	<h1 class="title" style="color: #363636;">Mikko Oikkonen</h1>
+      	<h2 class="subtitle" style="color: #363636;">Työnantajan paras ystävä</h2>
     
-      	<p>Olen Mikko Oikkonen, ohjelmistoalan moniosaaja Tampereelta. Tämä on portfoliosivuni jossa esittelen työkokemustani ja projektejani. Blogissa kirjoittelen erilaisista ammatillisista tai sitä lähellä olevista aiheista. Olen innostunut uusista haasteista ja uuden oppimisesta. Haluaisin olla osa osaavaa tiimiä jossa toteuttaisimme yhdessä uusia menestysohjelmistoja. Kutsu minut työhaastatteluun!</p>
+      	<p style="color: #363636;">Olen Mikko Oikkonen, ohjelmistoalan moniosaaja Tampereelta. Tämä on portfoliosivuni jossa esittelen työkokemustani ja projektejani. Blogissa kirjoittelen erilaisista ammatillisista tai sitä lähellä olevista aiheista. Olen innostunut uusista haasteista ja uuden oppimisesta. Haluaisin olla osa osaavaa tiimiä jossa toteuttaisimme yhdessä uusia menestysohjelmistoja. Kutsu minut työhaastatteluun!</p>
 
       	<br />
 
@@ -88,33 +88,33 @@ title: Portfolio | Mikko Oikkonen
 	<div class="hero-body with-bg-opacity has-text-centered">
 
 
-		<div class="content" style="max-width: 765px; margin: auto;">
+		<div class="content" style="max-width: 765px; margin: auto; color: black;">
 
-	      	<h1 class="title">Projektit</h1>
-    	  	<h2 class="subtitle">Koodiprojektejani on Githubissa näkyvissä ja niiden avulla voi tutustua tekemisiini...</h2>
+	      	<h1 class="title" style="color: #506C7B;">Projektit</h1>
+    	  	<h2 class="subtitle" style="color: #506C7B;">Koodiprojektejani on Githubissa näkyvissä ja niiden avulla voi tutustua tekemisiini...</h2>
 
-			<article class="notification is-info">
+			<article class="notification is-primary">
 				<p class="title is-4">Kukko Kevytyrittäjyyssofta</p>
 				<p class="subtitle is-5">Node.js+Vue BackEnd-FrontEnd</p>
 				<p>Webbisofta jossa toteutettu suosittujen kevytyrittäjyyspalvelujen perustoiminnallisuuksia. Käyttäjien rekisteröinti, asiakasrekisteri, laskujen luonti, palkkalaskuri, palkat. Käyttäjät voivat muodostaa laskuja asiakkaille ja nostaa itselleen palkkaa maksettujen laskujen perusteella. Palkanlaskijat voivat merkitä laskuja maksetuksi ja merkitä palkkoja maksetuksi. Frontend-koodi vue.js:llä, joka keskustelee backendin kanssa, joka toteutettu Node.js+Adonis.js:llä.</p>
 				<a href="#">Lue lisää</a>
 			</article>
 
-			<article class="notification is-info">
+			<article class="notification is-primary">
 				<p class="title is-4">NetvisorClient</p>
 				<p class="subtitle is-5">Yhteyspalikka taloushallintaohjelmisto Netvisoriin</p>
 				<p>Taloushallinto-ohjelma Netvisorin ohjelmistorajapintaan JavaSkrirptillä toteuttamani clientti, jolla voi siirtää laskuja, asiakkaita, palkansaajia ja palkkoja Netvisorin ohjelmistorajapinnan kautta. Clientti löytyy npm-pakkauksena ja sen voi liittää omaan Node.js -projektiinsa joka halutaan intekroida taloushallintaohjelmisto Netvisorin kanssa.</p>
 				<a href="#">Gitpubbiin</a>
 			</article>
 
-			<article class="notification is-info">
+			<article class="notification is-primary">
 				<p class="title is-4">Alerent.fi</p>
 				<p class="subtitle is-5">Staattinen nettisivu WordPressillä</p>
 				<p>Halpa-autovuokraamo Alerentin sivut on toteutettu WordPressillä. Sivut ovat kuitenkin niin yksinkertaiset, että niiden on turha olla massiivisen sisällönhallintajärjestelmän päällä. Viritin sivut sellaisiksi, että wp:n asennus ja hallintapaneeli on salaisessa paikassa ja aina kun niitä päivitetään (page/post publish) sivut pullautetaan staattiseksi sivuksi alerent.fi -osoitteeseen. Tämä lisää sivujen nopeutta ja tietoturvaa, koska säilönnänhallintaa tarvitaan vain sivujen päivitysvaiheessa, ei joka kerta kun joku sattuu sivuille surffaamaan.</p>
 				<a href="https://www.alerent.fi">alerent.fi</a>
 			</article>
 
-			<article class="notification is-info">
+			<article class="notification is-primary">
 				<p class="title is-4">Esittelysivu</p>
 				<p class="subtitle is-5">Tämä portfoliosivu Jekyll+Github</p>
 				<p>Tämän portfoliosivuston toteutin Jekyllillä staattisena nettisivuna ja se on hostattuna githubissa. Voin päivittää sivua omalla kotikoneellani ja kun pushaan gitpuppiin, sivut automaagisesti päivittyvät. Hostaus on ilmaista. Https on ilmainen. Maksan vain omasta domainista. Käytin Bulma css-kirjastoa sivun toteutuksessa.</p>

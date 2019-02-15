@@ -5,7 +5,8 @@ permalink: /blog/:year/:month/:day/:title
 
 title: mikkoo.io
 
-site.base_url: "https://mmoi.github.io/jekyll-bulma-starter/"
 
+url: "localhost:4000" # "https://mmoi.github.io/mikkoo"
+baseurl: "/" # "/"
 
 exclude: [sass]
