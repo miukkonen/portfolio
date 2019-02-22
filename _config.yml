@@ -6,8 +6,8 @@ permalink: /blog/:year/:month/:day/:title
 title: mikkoo.io
 
 
-url: "localhost:4000" # "https://mmoi.github.io/mikkoo"
-baseurl: "/" # "/"
+url: "https://mmoi.github.io" # "https://mmoi.github.io/mikkoo"
+baseurl: "/mikkoo/" # "/"
 
 exclude: [sass]
 
