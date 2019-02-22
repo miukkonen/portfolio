@@ -1,7 +1,6 @@
 ---
 title: "Intrinsic Oy"
 subtitle: "( 1.6.2015 - )"
-date: 2015-06-01
 order: a
 ---
 

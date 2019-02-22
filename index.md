@@ -41,40 +41,37 @@ title: Portfolio | Mikko Oikkonen
 
 
 
+<section class="section" id="kokemus">
 
 
+	<div class="columns is-centered">
 
+		<div class="column is-half">
+		  
+		      
+		      	<h1 class="title">Työkokemus</h1>
+		      	<h2 class="subtitle">Viimeisin työkokemus ohjelmistoalalta</h2>
+		    
 
-<section id="kokemus" class="hero is-fullheight" style="background: #ffffff;">
+		      	<div class="content">
 
-  
-  <div class="hero-body">
+					{% assign jobs_in_order = site.jobs | sort: "order" %}
 
-	<div class="container" style="max-width: 765px;">
-      
-      	<h1 class="title">Työkokemus</h1>
-      	<h2 class="subtitle">Viimeisin työkokemus ohjelmistoalalta</h2>
-    
+					{% for job in jobs_in_order %}
 
-      	<div class="content">
+						<h3 class="subtitle">{{ job.title }}</h3>
+						<h4 class="subtitle">{{ job.subtitle }}</h4>
+						{{ job.content }}
 
-			{% assign jobs_in_order = site.jobs | sort: "order" %}
+					{% endfor %}      	
 
-			{% for job in jobs_in_order %}
-
-				<h3 class="subtitle">{{ job.title }}</h3>
-				<h4 class="subtitle">{{ job.subtitle }}</h4>
-				{{ job.content }}
-
-			{% endfor %}      	
+				</div>
 
 		</div>
 
+	</div>
 
-    </div>
   
-  </div>
-
 </section>
 
 
@@ -82,7 +79,7 @@ title: Portfolio | Mikko Oikkonen
 
 
 
-<section class="hero is-primary is-fullheight" style="background: #ffffff url('img/code-background.jpg') no-repeat scroll center 40%; background-size: cover;">
+<section id="projektit" class="hero is-primary is-fullheight" style="background: #ffffff url('img/code-background.jpg') no-repeat scroll center 40%; background-size: cover;">
 
   
 	<div class="hero-body with-bg-opacity has-text-centered">
@@ -93,33 +90,19 @@ title: Portfolio | Mikko Oikkonen
 	      	<h1 class="title" style="color: #506C7B;">Projektit</h1>
     	  	<h2 class="subtitle" style="color: #506C7B;">Koodiprojektejani on Githubissa näkyvissä ja niiden avulla voi tutustua tekemisiini...</h2>
 
-			<article class="notification is-primary">
-				<p class="title is-4">Kukko Kevytyrittäjyyssofta</p>
-				<p class="subtitle is-5">Node.js+Vue BackEnd-FrontEnd</p>
-				<p>Webbisofta jossa toteutettu suosittujen kevytyrittäjyyspalvelujen perustoiminnallisuuksia. Käyttäjien rekisteröinti, asiakasrekisteri, laskujen luonti, palkkalaskuri, palkat. Käyttäjät voivat muodostaa laskuja asiakkaille ja nostaa itselleen palkkaa maksettujen laskujen perusteella. Palkanlaskijat voivat merkitä laskuja maksetuksi ja merkitä palkkoja maksetuksi. Frontend-koodi vue.js:llä, joka keskustelee backendin kanssa, joka toteutettu Node.js+Adonis.js:llä.</p>
-				<a href="#">Lue lisää</a>
-			</article>
+			
+			{% for project in site.projects %}
 
-			<article class="notification is-primary">
-				<p class="title is-4">NetvisorClient</p>
-				<p class="subtitle is-5">Yhteyspalikka taloushallintaohjelmisto Netvisoriin</p>
-				<p>Taloushallinto-ohjelma Netvisorin ohjelmistorajapintaan JavaSkrirptillä toteuttamani clientti, jolla voi siirtää laskuja, asiakkaita, palkansaajia ja palkkoja Netvisorin ohjelmistorajapinnan kautta. Clientti löytyy npm-pakkauksena ja sen voi liittää omaan Node.js -projektiinsa joka halutaan intekroida taloushallintaohjelmisto Netvisorin kanssa.</p>
-				<a href="#">Gitpubbiin</a>
-			</article>
+				<article class="notification is-info">
 
-			<article class="notification is-primary">
-				<p class="title is-4">Alerent.fi</p>
-				<p class="subtitle is-5">Staattinen nettisivu WordPressillä</p>
-				<p>Halpa-autovuokraamo Alerentin sivut on toteutettu WordPressillä. Sivut ovat kuitenkin niin yksinkertaiset, että niiden on turha olla massiivisen sisällönhallintajärjestelmän päällä. Viritin sivut sellaisiksi, että wp:n asennus ja hallintapaneeli on salaisessa paikassa ja aina kun niitä päivitetään (page/post publish) sivut pullautetaan staattiseksi sivuksi alerent.fi -osoitteeseen. Tämä lisää sivujen nopeutta ja tietoturvaa, koska säilönnänhallintaa tarvitaan vain sivujen päivitysvaiheessa, ei joka kerta kun joku sattuu sivuille surffaamaan.</p>
-				<a href="https://www.alerent.fi">alerent.fi</a>
-			</article>
+				<p class="subtitle">{{ project.title }}</p>
+				<p class="subtitle">{{ project.subtitle }}</p>
+				{{ project.content }}
+				<a href="{{ project.link }}">{{ project.link }}</a>
 
-			<article class="notification is-primary">
-				<p class="title is-4">Esittelysivu</p>
-				<p class="subtitle is-5">Tämä portfoliosivu Jekyll+Github</p>
-				<p>Tämän portfoliosivuston toteutin Jekyllillä staattisena nettisivuna ja se on hostattuna githubissa. Voin päivittää sivua omalla kotikoneellani ja kun pushaan gitpuppiin, sivut automaagisesti päivittyvät. Hostaus on ilmaista. Https on ilmainen. Maksan vain omasta domainista. Käytin Bulma css-kirjastoa sivun toteutuksessa.</p>
-				<a href="#">Esittelysivu</a>
-			</article>
+				</article>
+
+			{% endfor %}      	
 
 
    	 	</div>
@@ -166,7 +149,7 @@ title: Portfolio | Mikko Oikkonen
 
 		  <div class="column notificationi is-primary-i has-text-centered">
 		    <i class="fas fa-file fa-4x"></i>
-		    <h3 class="title">Projektinhallinta</h3>
+		    <h3 class="title">Projektit hallinnassa</h3>
 		    <p>Kokemusta monista eri tyylisistä projektimenetelmistä: Vesiputous - Agile - Lean</p>
 		  </div>
 
@@ -191,21 +174,21 @@ title: Portfolio | Mikko Oikkonen
 
 
 		  <div class="column notificationi is-primary-i has-text-centered">
-		    <i class="fas fa-upload fa-4x"></i>
-		    <h3 class="title">Teknologianeutraali</h3>
-		    <p>Minulla on tällä hetkellä tuotannossa pyörimässä koodia jotka on toteutettu seuraavilla ohjelmointikielillä: C++, C#, PHP, JavaScript, Python.</p>
+		    <i class="fas fa-comments fa-4x"></i>
+		    <h3 class="title">Kommunikoiva</h3>
+		    <p>Pyrin selkeään kommunikointiin ja ilmaisen itseäni kirjallisesti sujuvasti.</p>
 		  </div>
 
 		  <div class="column notificationi is-primary-i has-text-centered">
 		    <i class="fas fa-upload fa-4x"></i>
 		    <h3 class="title">Teknologianeutraali</h3>
-		    <p>Minulla on tällä hetkellä tuotannossa pyörimässä koodia jotka on toteutettu seuraavilla ohjelmointikielillä: C++, C#, PHP, JavaScript, Python.</p>
+		    <p>Minulla on tällä hetkellä tuotannossa pyörimässä koodia jotka on toteutettu seuraavilla teknologioilla: C++, DotNet/C#, PHP, JavaScript, Python.</p>
 		  </div>
 
 		  <div class="column notificationi is-primary-i has-text-centered">
 		  	<i class="fas fa-bicycle fa-4x"></i>
 		    <h3 class="title">Ilmastoystävällinen</h3>
-		    <p>Kuljen työmatkat pääasiassa polkupyörillä jotka on löydetty roskiksista ja kunnostettu uusiokäyttöön.</p>
+		    <p>Kuljen työmatkat pääasiassa polkupyörällä joka on pelastettu roskiksesta ja kunnostettu uusiokäyttöön.</p>
 		  </div>
 
 

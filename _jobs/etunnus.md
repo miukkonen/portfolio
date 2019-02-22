@@ -1,25 +1,19 @@
 ---
 title: "Suomen E-tunnus Oy"
 subtitle: "( 16.8.2013 - 31.5.2015 )"
-date: 2013-08-16
 order: b
 ---
 
-Syksyllä 2013 olin mukana tiimissä joka toteutti oma.e-tunnus.fi -verkkopalvelun. E-tunnus on yritys, jonka kautta voi toimia yrittäjänä ilman omaa yritystä.
+Syksyllä 2013 olin mukana tiimissä joka toteutti oma.e-tunnus.fi -verkkopalvelun. E-tunnus on niin kutsuttu laskutuspalvelu, jonka kautta voi laskuttaa työnsä ilman että tarvitsee perustaa omaa yritystä.
 
-Palvelu on toteutettu CakePHP-sovelluskehyksen päälle. CakePHP on myös MVC-mallin mukainen kehys PHP-kielelle. Palvelun kautta käyttäjät voivat luoda laskuja jotka REST-rajapinnan kautta lähetetään Visman Netvisor-taloushallintasoftaan, josta e-tunnuksen asiakaspalvelu sitten välittää laskut eteenpäin. Käyttäjät voivat seurata palvelun kautta laskujen ja palkanmaksun tilaa.
+Palvelukonsepti toimii niin että käyttäjät lähettävät verkkopalvelun kautta tiedot laskuista. Laskut välitetään asiakkaille ja maksettujen laskujen perusteella muodostetaan palkkaerittelyt ja maksetaan palkka käyttäjille. Käyttäjät voivat seurata laskujen ja palkanmaksun tilaa verkkopalvelun avulla.
 
-Palvelun avaamisen jälkeen (vuoden 2014 alusta) olen ylläpitänyt ja pikkuhiljaa kehittänyt sitä eteenpäin. Olen myös huolehtinut välillä asiakaspalvelusta vastaten sähköposteihin ja puheluihin. E-tunnuksella on tällä hetkellä useita kymmeniä aktiivisia käyttäjiä.
+Palvelu avattiin vuoden 2014 alussa ja sen jälkeen ylläpidin ja pikkuhiljaa kehitin sitä. Jonkin aikaa huolehdin myös asiakaspalvelusta vastaten sähköposteihin ja puheluihin.
 
-Tiettyyn aikaan olin vastuussa koko systeemistä yksin.
+Verkkopalvelu toteutettiin web-hotelliin PHP-kielisenä. Selainpään toiminnallisuudet tehtiin JavaScriptillä jQuery-kirjaston avulla. Sovelluksen pohjana oli CakePHP-sovelluskehys, joka noudattaa MVC-mallia. Sovellus myös integroitiin taloushallintaohjelmisto Netvisorin kanssa, jonka REST-rajapinnan kautta voidaan välittää tiedot laskuista.
 
-Kaikki täytyi selvittää itse. Ei voinut kysellä keneltäkään neuvoja.
+Palvelun kehittämisessä yllättäen tekninen puoli ei kuitenkaan ollut vaikein osuus, vaan hankalinta oli varsinaisen palvelun rakentaminen. Laskutus, palkanmaksu, vakuutukset, yhteistyö tilitoimiston, pankin ja vakuutusyhtiöiden ja verottajan kanssa ja miten järjestelmän saa sovitettua tähän kaikkeen. Jostain syystä en saanut keskittyä pelkkään koodaamiseen vaan jouduin selvittämään myös miten nämä asiat toimivat. Palveluhan voisi toimia ilman nettisovellustakin. Nettisovellus automatisoi ja helpottaa palvelun toimintaa digitalisaation hengessä.
 
-Palvelun kehittämisessä suurin haaste ei niinkään ollut softan kehitys, vaan ylipäänsä sen selvittäminen, miten tällainen sateenvarjoyritys oikeasti käytännössä toimii ja saada koko palvelukonsepti toimimaan sujuvasti. Palveluun liittyy laskutus, palkanmaksu, vakuutukset, yhteistyö tilitoimiston kanssa jne. On ollut tosi mielenkiintoista rakentaa tämä palvelu alusta lähtien ja nähdä että se oikeasti toimii ja että siitä on hyötyä käyttäjilleen.
+Oli todella mielenkiintoista olla mukana rakentamassa tätä palvelua alusta lähtien ja nähdä että se saatiin toimimaan ja että siitä on ollut hyötyä käyttäjilleen.
 
-Suurin haaste oli tapella kaiken maailman byrokratian tuulimyllyjen kanssa että homma saatiin ylipäänsä toimimaan. Tekninen puoli oli haasteista pienin. Palveluhan voisi toimia ilman toteuttamaamme nettipalveluakin mutta se olisi erittäin työlästä ja vaivalloista. Nettipalvelu helpottaa elämää.
-
-Palvelulla on tällä hetkellä yli sata aktiivista laskuttavaa käyttäjää. Yli 300 käyttäjää jotka ovat ainakin kokeilleet palvelua.
-
-Työkaluja: Linux, PHP, Javascript, CakePHP, MySQL, Git, kanbantool.com
-
+Palvelulla oli jossakin vaiheessa yli sata aktiivista laskuttavaa käyttäjää. E-tunnus on edelleen toiminnassa mutta en ole itse enää mukana sitä kehittämässä.

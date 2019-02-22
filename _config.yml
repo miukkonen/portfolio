@@ -14,3 +14,5 @@ exclude: [sass]
 
 collections:
   - jobs
+  - projects
+  
