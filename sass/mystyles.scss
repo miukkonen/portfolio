@@ -1,0 +1,54 @@
+
+
+// custom styles
+
+
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Set your brand colors
+$glasses: #223E4D;
+$glasses-light: #506C7B;
+//$purple: #8A4D76;
+//$pink: #FA7C91;
+//$brown: #757763;
+//$beige-light: #D0D1CD;
+//$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Open Sans", sans-serif;
+//$grey-dark: $brown;
+//$grey-light: $beige-light;
+$primary: $glasses-light;
+//$link: $pink;
+//$widescreen-enabled: false;
+//$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+//$body-background-color: $beige-lighter;
+//$control-border-width: 2px;
+//$input-border-color: transparent;
+//$input-shadow: none;
+
+
+//$title-color: $primary;
+//$subtitle-color: $primary;
+
+
+
+// custom classes
+
+.with-bg-opacity {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+
+
+
+// bulma styles
+
+@import "../node_modules/bulma/bulma.sass";
+
+

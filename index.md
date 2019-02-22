@@ -12,16 +12,22 @@ title: Portfolio | Mikko Oikkonen
 
 	<div class="container has-text-centered" style="max-width: 765px;">
       	
-      	<img src="img/oma-profiilikuva-web-500.jpg" style="width: 280px; border-radius: 290486px;">
+      	<img src="img/oma39b.jpg" style="width: 280px; border-radius: 290486px;">
 		
       	<h1 class="title" style="color: #363636;">Mikko Oikkonen</h1>
       	<h2 class="subtitle" style="color: #363636;">Työnantajan paras ystävä</h2>
     
-      	<p style="color: #363636;">Olen Mikko Oikkonen, ohjelmistoalan moniosaaja Tampereelta. Tämä on portfoliosivuni jossa esittelen työkokemustani ja projektejani. Blogissa kirjoittelen erilaisista ammatillisista tai sitä lähellä olevista aiheista. Olen innostunut uusista haasteista ja uuden oppimisesta. Haluaisin olla osa osaavaa tiimiä jossa toteuttaisimme yhdessä uusia menestysohjelmistoja. Kutsu minut työhaastatteluun!</p>
+      	<p style="color: #363636;">
+
+      		Olen Mikko Oikkonen, ohjelmistotuotannon ammattilainen Tampereelta. Tämä sivu on portfolioni, jossa esittelen työkokemustani ja projektejani. Olen innostunut uusista haasteista ja uuden oppimisesta. Haluaisin mukaan innovatiiviseen tiimiin jossa kehittyisin entistä taitavammaksi ohjelmistokehittäjäksi. Kutsu minut työhaastatteluun!
+
+		</p>
+
 
       	<br />
 
-      	<a href="#yhteystiedot" class="button is-large is-success">Kutsu Mikko työhaastatteluun</a>
+      	<a href="#yhteystiedot" class="button is-large is-info">Kutsu Mikko työhaastatteluun</a>
+
 
     </div>
   
@@ -39,7 +45,7 @@ title: Portfolio | Mikko Oikkonen
 
 
 
-<section class="hero is-fullheight" style="background: #ffffff;">
+<section id="kokemus" class="hero is-fullheight" style="background: #ffffff;">
 
   
   <div class="hero-body">
@@ -47,27 +53,20 @@ title: Portfolio | Mikko Oikkonen
 	<div class="container" style="max-width: 765px;">
       
       	<h1 class="title">Työkokemus</h1>
-      	<h2 class="subtitle">Viimeisimmät työkokemukset it-alalta</h2>
+      	<h2 class="subtitle">Viimeisin työkokemus ohjelmistoalalta</h2>
     
-		<h3 class="subtitle">Intrinsic Oy (1.6.2015 - )</h3>
 
-		<p>Työskentelen parhaillaan systeemisuunnittelijana Intrinsic -nimisessä pienessä ohjelmistoyrityksessä. Toteutamme ja ylläpidämme asiakkaiden tarpeisiin räätälöityjä järjestelmiä. Intrinsic on ollut toteuttamassa esimerkiksi Suomen tiesää- ja liikenteenvalvontajärjestelmiä. Tämä on avannut minulle kiehtovia näkökulmia esimerkiksi älykkään liikenteen ja avoimen datan maailmoihin ja tulevaisuuden visioihin.</p>
+      	<div class="content">
 
-		<br />
+			{% for job in site.jobs %}
 
-		<h3 class="subtitle">Suomen E-tunnus Oy, 16.8.2013 - 31.5.2015</h3>
+				<h3 class="subtitle">{{ job.title }}</h3>
+				{{ job.content | markdownify }}
 
-		<p>Syksyllä 2013 olin mukana tiimissä joka toteutti oma.e-tunnus.fi -verkkopalvelun. E-tunnus on yritys, jonka kautta voi toimia yrittäjänä ilman omaa yritystä.</p>
+			{% endfor %}      	
 
-		<p>Palvelu on toteutettu CakePHP-sovelluskehyksen päälle. CakePHP on myös MVC-mallin mukainen kehys PHP-kielelle. Palvelun kautta käyttäjät voivat luoda laskuja jotka REST-rajapinnan kautta lähetetään Visman Netvisor-taloushallintasoftaan, josta e-tunnuksen asiakaspalvelu sitten välittää laskut eteenpäin. Käyttäjät voivat seurata palvelun kautta laskujen ja palkanmaksun tilaa.</p>
+		</div>
 
-		<br />
-
-		<h3 class="subtitle">Frontle keikkahakukone, 1.1.2013 - 15.8.2013</h3>
-
-		<p>Kevään ja kesän 2013 olin tiiviisti mukana erään tutuntutun startupissa Protomo-yrityshautomolla. Rakensimme viiden hengen tiimissä nettiin keikkojen hakupalvelua nimeltä Frontle. Palvelun tarkoituksena oli siis että pystyy katsomaan mitä keikkoja ja konsertteja milloinkin on tulossa missäkin kaupungissa. Palvelu järjestää hakutuloksia keikkojen suosion ja sosiaalisen median hypen mukaan vähän Googlen hakukoneen tapaan.</p>
-
-		<br />
 
       	<a href="/kokemus" class="button is-large is-success">Näytä lisää</a>
 
@@ -223,14 +222,14 @@ title: Portfolio | Mikko Oikkonen
 
 
 
-<section class="section hero is-fullheight is-primary" id="yhteystiedot">
+<section class="section hero is-fullheight is-info " id="yhteystiedot">
 
 
 	<div class="hero-body has-text-centered">
 
 		<div class="container has-text-centered">
 
-			<h1 class="title">Ota yhteyttä!</h1>
+			<h1 class="title">Kutsu Mikko haastatteluun!</h1>
 
 			<p>Mikko Oikkonen</p>
 			<p>mikko.oikkonen@lowbudget.fi</p>

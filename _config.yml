@@ -10,3 +10,7 @@ url: "localhost:4000" # "https://mmoi.github.io/mikkoo"
 baseurl: "/" # "/"
 
 exclude: [sass]
+
+
+collections:
+  - jobs
