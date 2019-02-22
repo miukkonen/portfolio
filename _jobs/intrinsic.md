@@ -1,5 +1,8 @@
 ---
-title: "Intrinsic Oy (1.6.2015 - )"
+title: "Intrinsic Oy"
+subtitle: "( 1.6.2015 - )"
+date: 2015-06-01
+order: a
 ---
 
 Tällä hetkellä työskentelen Intrinsic -nimisessä ohjelmistoyrityksessä Tampereella systeemisuunnittelijana. Toteutamme ja ylläpidämme asiakkaiden tarpeisiin räätälöityjä järjestelmiä.

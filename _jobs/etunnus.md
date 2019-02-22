@@ -1,5 +1,8 @@
 ---
-title: Suomen E-tunnus Oy ( 16.8.2013 - 31.5.2015 )
+title: "Suomen E-tunnus Oy"
+subtitle: "( 16.8.2013 - 31.5.2015 )"
+date: 2013-08-16
+order: b
 ---
 
 Syksyllä 2013 olin mukana tiimissä joka toteutti oma.e-tunnus.fi -verkkopalvelun. E-tunnus on yritys, jonka kautta voi toimia yrittäjänä ilman omaa yritystä.

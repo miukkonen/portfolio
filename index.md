@@ -58,17 +58,18 @@ title: Portfolio | Mikko Oikkonen
 
       	<div class="content">
 
-			{% for job in site.jobs %}
+			{% assign jobs_in_order = site.jobs | sort: "order" %}
+
+			{% for job in jobs_in_order %}
 
 				<h3 class="subtitle">{{ job.title }}</h3>
-				{{ job.content | markdownify }}
+				<h4 class="subtitle">{{ job.subtitle }}</h4>
+				{{ job.content }}
 
 			{% endfor %}      	
 
 		</div>
 
-
-      	<a href="/kokemus" class="button is-large is-success">Näytä lisää</a>
 
     </div>
   
