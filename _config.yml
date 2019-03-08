@@ -3,11 +3,11 @@ markdown: kramdown
 
 permalink: /blog/:year/:month/:day/:title
 
-title: mikkoo.io
+title: mikkoo.me
 
 
-url: "https://mmoi.github.io" # "https://mmoi.github.io/mikkoo"
-baseurl: "/mikkoo/" # "/"
+url: "https://mikkoo.me" # "https://mmoi.github.io/mikkoo"
+baseurl: "/" # "/"
 
 exclude: [sass]
 

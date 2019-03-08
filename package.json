@@ -1,0 +1,26 @@
+{
+  "name": "mikkoo",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "main": "sass/mystyles.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/site.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmoi/mikkoo.git"
+  },
+  "author": "Mikko Oikkonen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmoi/mikkoo/issues"
+  },
+  "homepage": "https://github.com/mmoi/mikkoo#readme",
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "node-sass": "^4.11.0"
+  }
+}
