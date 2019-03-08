@@ -97,7 +97,7 @@ title: Portfolio | Mikko Oikkonen
 
 				<article class="notification is-info">
 
-				<p class="subtitle">{{ project.title }}</p>
+				<p class="title">{{ project.title }}</p>
 				<p class="subtitle">{{ project.subtitle }}</p>
 				{{ project.content }}
 				<a href="{{ project.link }}">{{ project.link }}</a>
@@ -112,6 +112,13 @@ title: Portfolio | Mikko Oikkonen
 	</div>
 
 </section>
+
+
+
+
+
+
+
 
 
 
@@ -208,6 +215,10 @@ title: Portfolio | Mikko Oikkonen
 
 
 
+
+
+
+
 <section class="section hero is-fullheight is-info " id="yhteystiedot">
 
 
@@ -226,6 +237,58 @@ title: Portfolio | Mikko Oikkonen
 	</div>
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="section" id="blogi">
+
+
+	<div class="columns is-centered">
+
+		<div class="column is-half">
+		  
+		      
+		      	<h1 class="title">Ammatillinen blogi</h1>
+		      	<h2 class="subtitle">Uusimmat kirjoitukset</h2>
+		    
+
+		      	<div class="content">
+
+					{% for post in site.posts limit:2 %}
+
+						<h2 class="title">{{ post.title }}</h2>
+						<p class="subtitle">Kirjoitettu: {{ post.date | date: '%d.%m.%Y' }}</p>
+
+						<p>{{ post.excerpt }}</p>
+
+						<a class="" href="{{ post.url }}">Näytä kirjoitus</a>
+
+					{% endfor %}      	
+
+				</div>
+
+
+				<a class="button is-large is-info" href="/blogi">Näytä kaikki blogikirjoitukset</a>
+
+
+		</div>
+
+	</div>
+
+  
+</section>
+
+
+
+
 
 
 
