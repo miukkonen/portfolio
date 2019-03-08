@@ -91,7 +91,9 @@ title: Portfolio | Mikko Oikkonen
     	  	<h2 class="subtitle" style="color: #506C7B;">Koodiprojektejani on Githubissa näkyvissä ja niiden avulla voi tutustua tekemisiini...</h2>
 
 			
-			{% for project in site.projects %}
+    	  	{% assign visible_projects = site.projects | where: "show", "true" %}
+
+			{% for project in visible_projects %}
 
 				<article class="notification is-info">
 
