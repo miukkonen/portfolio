@@ -1,3 +1,3 @@
-# Mikkoo.io
+# mikkoo.me
 
-Portfolio
+Portfolio-sivu toteutettu Jekyll + Bulma CSS
