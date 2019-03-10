@@ -12,21 +12,37 @@ title: Portfolio | Mikko Oikkonen
 
 	<div class="container has-text-centered" style="max-width: 765px;">
       	
-      	<img src="img/oma39b.jpg" style="width: 280px; border-radius: 290486px;">
-		
-      	<h1 class="title is-1" style="color: #363636;">Mikko Oikkonen</h1>
-      	<h2 class="subtitle is-3" style="color: #363636;">Työnantajan paras ystävä</h2>
-    
-      	<p style="color: #363636;">
+    	<div class="content">
 
-      		Olen Mikko Oikkonen, ohjelmistotuotannon ammattilainen Tampereelta. Tämä sivu on portfolioni, jossa esittelen työkokemustani ja projektejani. Olen innostunut uusista haasteista ja uuden oppimisesta. Haluaisin mukaan innovatiiviseen tiimiin jossa kehittyisin entistä taitavammaksi ohjelmistokehittäjäksi. Kutsu minut työhaastatteluun!
+	      	<img src="img/oma39b.jpg" style="width: 280px; border-radius: 290486px;">
+			
+	      	<h1 class="title is-1" style="color: #363636;">Mikko Oikkonen</h1>
+	      	<h2 class="subtitle is-3" style="color: #363636;">Työnantajan paras ystävä</h2>
+	    
+	      	<p style="color: #363636;">
 
-		</p>
+	      		Olen Mikko Oikkonen, ohjelmistotuotannon ammattilainen Tampereelta. Tämä sivu on portfolioni, jossa esittelen työkokemustani ja projektejani.
+	      	
+	      	</p>
+
+			<p style="color: #363636;">
+
+		      	Olen innostunut uusista haasteista ja uuden oppimisesta. Haluaisin mukaan innovatiiviseen tiimiin jossa kehittyisin entistä taitavammaksi ohjelmistokehittäjäksi.
+
+			</p>
+
+			<p style="color: #363636;">
+
+				Kutsu minut työhaastatteluun!
+
+			</p>
 
 
-      	<br />
+	      	<br />
 
-      	<a href="#yhteystiedot" class="button is-large is-info">Kutsu Mikko työhaastatteluun</a>
+	      	<a href="#yhteystiedot" class="button is-large is-info">Kutsu Mikko työhaastatteluun</a>
+
+	    </div>
 
 
     </div>
