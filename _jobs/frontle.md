@@ -9,7 +9,6 @@ Vuonna 2013 olin mukana startup-yrityksessä Protomo-yrityshautomolla. Rakensimm
 
 Frontlea lähdettiin rakentamaan Ruby on Rails -webbikehyksen päälle. Kehitin itse Frontlen front-end-puolta.
 
-Frontle (myöhemmin nimellä Gigwhale) ei ole enää toiminnassa. Netissä ei edelleenkään ole kattavaa tällaista palvelua vaan tieto konserteista on hajallaan siellä sun täällä. Frontle sai kuitenkin jonkunverran tunnustusta Startup-piireissä ja voitti jonkinlaisen kilpailunkin niin että pääsimme pitsaamaan ideaa Lontooseen asti (en itse ollut siellä mukana).
+Frontle (myöhemmin nimellä Gigwhale) ei ole enää toiminnassa. Netissä ei edelleenkään ole kattavaa tällaista palvelua vaan tieto konserteista on hajallaan siellä sun täällä. Frontle sai kuitenkin jonkunverran tunnustusta Startup-piireissä ja voitti jonkinlaisen kilpailunkin niin että se pääsi Lontooseen pitsalle.
 
-Frontlesta ei tullut pitkäikäistä menestystarinaa mutta aika projektissa oli erittäin hyödyllistä sen suoman kokemuksen kannalta. Protomolla pääsi tutustumaan kiehtovaan lean startup -maailmaan ja kaikkeen kulttuuriin, mitä siihen liittyy. Oli mielenkiintoista tutustua muihin Protomon tiimeihin ja tapahtumiin.
-
+Aika tässä projektissa oli erittäin hyödyllistä sen suoman kokemuksen kannalta. Protomolla pääsi tutustumaan kiehtovaan lean startup -maailmaan ja kaikkeen kulttuuriin, mitä siihen liittyy. Oli mielenkiintoista tutustua muihin Protomon tiimeihin ja tapahtumiin.

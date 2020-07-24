@@ -1,8 +1,13 @@
 ---
-title: Alerent.fi
+title: AleRent.fi
 subtitle: Staattinen nettisivu WordPressillä
 link: "https://www.alerent.fi"
-show: false
+show: true
 ---
 
-Halpa-autovuokraamo Alerentin sivut on toteutettu WordPressillä. Sivut ovat kuitenkin niin yksinkertaiset, että niiden on turha olla massiivisen sisällönhallintajärjestelmän päällä. Viritin sivut sellaisiksi, että wp:n asennus ja hallintapaneeli on salaisessa paikassa ja aina kun niitä päivitetään (page/post publish) sivut pullautetaan staattiseksi sivuksi alerent.fi -osoitteeseen. Tämä lisää sivujen nopeutta ja tietoturvaa, koska säilönnänhallintaa tarvitaan vain sivujen päivitysvaiheessa, ei joka kerta kun joku sattuu sivuille surffaamaan.
+Halpa-autovuokraamo AleRentin nettisivut on tarkoituksella toteutettu erittäin yksinkertaisiksi ja halvan näköisiksi ja sivusto on oikeastaan vain yksi kampanjasivu, jossa annetaan kaikki oleellinen tieto yrityksen palveluista.
+
+Sivu on toteutettu WordPressillä jotta myös sellaisen henkilön jolla ei ole teknistä osaamista html-sivujen tekoon olisi helppoa muokata jatkuvasti muuttuvaa sisältöä.
+
+Tällaisen sivun on kuitenkin turha olla jatkuvasti massiivisen sisällönhallintajärjestelmän päällä. Viritin sivun sellaiseksi, että kun sivuille tehdään muutoksia niin sen jälkeen sivusta otetaan staattinen kopio, joka näkyy osoitteessa alerent.fi. Sisällönhallintajärjestelmää tarvitaan vain sivujen sisältöä muokattaessa. Kun tavalliset käyttäjät käyvät sivulla, näkyy vain staattinen kopio. Tämä lisää huomattavasti sivujen nopeutta ja tietoturvaa.
+

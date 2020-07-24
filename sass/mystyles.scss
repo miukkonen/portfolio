@@ -11,6 +11,7 @@
 // Set your brand colors
 $glasses: #223E4D;
 $glasses-light: #506C7B;
+$my-blue: #23a2c7;
 //$purple: #8A4D76;
 //$pink: #FA7C91;
 //$brown: #757763;
@@ -21,7 +22,7 @@ $glasses-light: #506C7B;
 $family-sans-serif: "Open Sans", sans-serif;
 //$grey-dark: $brown;
 //$grey-light: $beige-light;
-$primary: $glasses-light;
+$primary: $my-blue;
 //$link: $pink;
 //$widescreen-enabled: false;
 //$fullhd-enabled: false;
@@ -33,8 +34,13 @@ $primary: $glasses-light;
 //$input-shadow: none;
 
 
-//$title-color: $primary;
-//$subtitle-color: $primary;
+$title-color: $my-blue;
+//$primary;
+$subtitle-color: $my-blue;
+
+
+
+
 
 
 
