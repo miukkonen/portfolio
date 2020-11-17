@@ -24,7 +24,7 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars ml-1"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Esittely</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#intro">Esittely</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Projektit</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Työkokemus</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Suosittelijat</a></li>
@@ -39,8 +39,8 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">{{ page.subheading }}</div>
-                <div class="masthead-heading text-uppercase">{{ page.heading }}</div>
+                <div class="masthead-subheading" style="">{{ page.subheading }}</div>
+                <div class="masthead-heading text-uppercase" style="">{{ page.heading }}</div>
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Esittelyyn</a>
             </div>
         </header>
@@ -48,14 +48,13 @@
 
 
 
-        <!-- Services-->
-        <section class="page-section" id="services">
+        <!-- Esittely -->
+        <section class="page-section" id="intro">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center" style="margin: auto; max-width: 600px;">
                     <h2 class="section-heading text-uppercase">Esittely</h2>
                     <h3 class="section-subheading text-muted">Olen Mikko Oikkonen, ohjelmistotuotannon ammattilainen Tampereelta. Tämä sivu on portfolioni, jossa esittelen työkokemustani ja projektejani.
-                    </h3>
-                    <h3 class="section-subheading text-muted">
+                    <br /><br />
                     Olen innostunut uusista haasteista ja uuden oppimisesta. Haluaisin mukaan innovatiiviseen tiimiin jossa kehittyisin entistä taitavammaksi ohjelmistokehittäjäksi.
                     </h3>
                 </div>
@@ -110,7 +109,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="themes/agency/assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="themes/agency/assets/img/coding-cat.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Alerent</div>
@@ -124,7 +123,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="themes/agency/assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="themes/agency/assets/img/coding-cat.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Esittelysivu</div>
@@ -138,7 +137,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="themes/agency/assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="themes/agency/assets/img/coding-cat.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">OmaKeli</div>
@@ -152,7 +151,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="themes/agency/assets/img/portfolio/04-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="themes/agency/assets/img/coding-cat.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">NetvisorClient</div>
@@ -166,11 +165,26 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="themes/agency/assets/img/portfolio/05-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="themes/agency/assets/img/coding-cat.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Ukkeli</div>
-                                <div class="portfolio-caption-subheading text-muted">React.js + Node.js + Express</div>
+                                <div class="portfolio-caption-heading">Ukkeli Backend</div>
+                                <div class="portfolio-caption-subheading text-muted">Node.js + Express.js REST API</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="themes/agency/assets/img/coding-cat.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Ukkeli React Frontend</div>
+                                <div class="portfolio-caption-subheading text-muted">React.js SPA</div>
                             </div>
                         </div>
                     </div>
@@ -404,18 +418,20 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="themes/agency/assets/img/portfolio/01-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul>
+                                    <h2 class="text-uppercase">AleRent.fi</h2>
+                                    <p class="item-intro text-muted">Staattinen nettisivu WordPressillä</p>
+                                    <img class="img-fluid d-block mx-auto" src="themes/agency/assets/img/coding-cat.png" alt="" />
+<p>Halpa-autovuokraamo AleRentin nettisivut on tarkoituksella toteutettu erittäin yksinkertaisiksi ja halvan näköisiksi ja sivusto on oikeastaan vain yksi kampanjasivu, jossa annetaan kaikki oleellinen tieto yrityksen palveluista.</p>
+
+<p>Sivu on toteutettu WordPressillä jotta myös sellaisen henkilön jolla ei ole teknistä osaamista html-sivujen tekoon olisi helppoa muokata jatkuvasti muuttuvaa sisältöä.</p>
+
+<p>Tällaisen sivun on kuitenkin turha olla jatkuvasti massiivisen sisällönhallintajärjestelmän päällä. Viritin sivun sellaiseksi, että kun sivuille tehdään muutoksia niin sen jälkeen sivusta otetaan staattinen kopio, joka näkyy osoitteessa alerent.fi. Sisällönhallintajärjestelmää tarvitaan vain sivujen sisältöä muokattaessa. Kun tavalliset käyttäjät käyvät sivulla, näkyy vain staattinen kopio. Tämä lisää huomattavasti sivujen nopeutta ja tietoturvaa.</p>
+                                    <p>
+                                        <a href="https://www.alerent.fi">https://www.alerent.fi</a>
+                                    </p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Sulje
                                     </button>
                                 </div>
                             </div>
@@ -434,18 +450,22 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Esittelysivu</h2>
+                                    <p class="item-intro text-muted">Jekyll + Github Pages + DNS</p>
                                     <img class="img-fluid d-block mx-auto" src="themes/agency/assets/img/portfolio/02-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Graphic Design</li>
-                                    </ul>
+                                    <p>Tämä portfoliosivu on toteutettu Jekyll-generaattorilla staattisena nettisivuna ja se on hostattuna GitHubissa.</p>
+<p>
+Sivujen päivittäminen on kätevää sillä se tapahtuu Gitin kautta. Muokkaukset tehdään html- ja markdown-tiedostoihin ja kun pushaan muutokset GitHubin repositorioon, GitHub päivittää sivut automaattisesti.</p>
+<p>
+Hostaus GitHubissa on ilmaista. Https-suojaus on ilmainen. Maksan vain omasta verkkotunnuksesta DNS-palveluntarjoajalleni.
+</p><p>
+Sivun teema on muokattu ilmaisen Startbootstrap Agency -teeman pohjalta.</p>
+
+                                    <p><a href="https://github.com/miukkonen/portfolio"></a></p>
+
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Sulje
                                     </button>
                                 </div>
                             </div>
