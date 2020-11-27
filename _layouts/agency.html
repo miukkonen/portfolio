@@ -41,7 +41,7 @@
             <div class="container">
                 <div class="masthead-subheading" style="">{{ page.subheading }}</div>
                 <div class="masthead-heading text-uppercase" style="">{{ page.heading }}</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Esittelyyn</a>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#intro">Esittelyyn</a>
             </div>
         </header>
 
@@ -53,7 +53,7 @@
             <div class="container">
                 <div class="text-center" style="margin: auto; max-width: 600px;">
                     <h2 class="section-heading text-uppercase">Esittely</h2>
-                    <h3 class="section-subheading text-muted">Olen Mikko Oikkonen, ohjelmistotuotannon ammattilainen Tampereelta. Tämä sivu on portfolioni, jossa esittelen työkokemustani ja projektejani.
+                    <h3 class="section-subheading text-muted">Olen Mikko Oikkonen, ohjelmistotuotannon ammattilainen Tampereelta. Tämä sivu on portfolioni, jossa esittelen työkokemustani ja projektejani - lähinnä web-kehitykseen liittyviä - joita löytyy ympäri Internettiä.
                     <br /><br />
                     Olen innostunut uusista haasteista ja uuden oppimisesta. Haluaisin mukaan innovatiiviseen tiimiin jossa kehittyisin entistä taitavammaksi ohjelmistokehittäjäksi.
                     </h3>
@@ -66,6 +66,7 @@
                         </span>
                         <h4 class="my-3">Projektit</h4>
                         <p class="text-muted">Tutustu koodausprojekteihini rauhassa ajan kanssa ilman kiirettä ja stressiä.</p>
+                        <a class="btn btn-link text-uppercase js-scroll-trigger" href="#portfolio">Projektit</a>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -74,6 +75,7 @@
                         </span>
                         <h4 class="my-3">Työkokemus</h4>
                         <p class="text-muted">Olen ollut töissä välillä enemmän ja välillä vähemmän, mutta aina yhtä innokkaasti.</p>
+                        <a class="btn btn-link text-uppercase js-scroll-trigger" href="#about">Työkokemus</a>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -82,13 +84,11 @@
                         </span>
                         <h4 class="my-3">Haastattelukutsu</h4>
                         <p class="text-muted">Älä jätä tilaisuutta käyttämättä vaan kutsu minut työhaastatteluun jo tänään.</p>
+                        <a class="btn btn-link text-uppercase js-scroll-trigger" href="#contact">Ota yhteyttä</a>
                     </div>
 
                 </div>
 
-                <div class="text-center">
-                   <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Ota yhteyttä</a>
-                </div>
 
             </div>
 
@@ -252,42 +252,33 @@
         <!-- Services-->
         <section class="page-section" id="services">
             
+
+
+
             <div class="container">
                 
                 <div class="row text-center">
-                              
+                    
+
+                    {% for f in site.feats %}
+
+
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-toolbox fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-{{ f.icon }} fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Monipuolinen kokemus</h4>
-                        <p class="text-muted">Minulla on monipuolista kokemusta kaikista ohjelmistojen elinkaaren vaiheista alkaen asiakkaan ensimmäisestä sähköpostista aina ohjelmien alasajoon saakka.</p>
+                        <h4 class="my-3">{{ f.heading }}</h4>
+                        <p class="text-muted">{{ f.description }}</p>
                     </div>
                     
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-users fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Tiimi-yhteensopiva</h4>
-                        <p class="text-muted">Viihdyn parhaiten intensiivisissä tiimeissä mutta osaan työskennellä myös yksin oma-aloitteisesti.</p>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-file fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Projektit hallinnassa</h4>
-                        <p class="text-muted">Olen ollut mukana projekteissa joissa on käytetty eri tyylisiä projektinhallintamenetelmiä: Vesiputous - Agile - Lean</p>
-                    </div>
+ 
+                    {% endfor %}
+
 
                 </div>
                 
             </div>
-
-
 
 
         </section>

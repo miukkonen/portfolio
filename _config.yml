@@ -15,4 +15,4 @@ exclude: [sass]
 collections:
   - jobs
   - projects
-  
+  - feats
