@@ -1,10 +1,11 @@
 ---
 title: "Intrinsic Oy"
-subtitle: "( 1.6.2015 - )"
-order: a
+subtitle: "2015 - 2020"
+order: b
+image: "3.jpg"
 ---
 
-Tällä hetkellä työskentelen Intrinsic -nimisessä ohjelmistoyrityksessä Tampereella systeemisuunnittelijana. Toteutamme ja ylläpidämme asiakkaiden tarpeisiin räätälöityjä järjestelmiä.
+Työskentelin Intrinsic -nimisessä ohjelmistoyrityksessä Tampereella systeemisuunnittelijana. Toteutimme ja ylläpidimme asiakkaiden tarpeisiin räätälöityjä järjestelmiä.
 
 Intrinsic on ollut mukana esimerkiksi toteuttamassa Suomen tiesää- ja kelikeskusjärjestelmiä. Tästä on avautunut minulle kiehtovia näkökulmia mm. älykkään liikenteen ja avoimen datan maailmoihin. 
 

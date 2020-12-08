@@ -1,11 +1,13 @@
 ---
 title: "Frontle keikkahakukone"
-subtitle: "( 1.1.2013 - 15.8.2013 )"
-date: 2013-01-01
-order: c
+subtitle: "2013"
+order: d
+image: "3.jpg"
 ---
 
-Vuonna 2013 olin mukana startup-yrityksessä Protomo-yrityshautomolla. Rakensimme viiden hengen tiimissä nettiin keikkojen hakupalvelua nimeltä Frontle. Palvelun pyrkimyksenä oli helpottaa keikkojen ja konserttien hakua netistä, esimerkiksi niin että pystyisi helposti yhdestä paikasta kootusti näkemään mitä keikkoja on tulossa missäkin kaupungissa haluttuna ajankohtana. Palvelu järjesti hakutuloksia keikkojen suosion ja sosiaalisen median hypen mukaan suosittujen some-palveluiden hengessä. 
+Vuonna 2013 olin mukana startup-yrityksessä Protomo-yrityshautomolla. Rakensimme viiden hengen tiimissä nettiin keikkojen hakupalvelua nimeltä Frontle.
+
+Palvelun pyrkimyksenä oli helpottaa keikkojen ja konserttien hakua netistä, esimerkiksi niin että pystyisi helposti yhdestä paikasta kootusti näkemään mitä keikkoja on tulossa missäkin kaupungissa haluttuna ajankohtana. Palvelu järjesti hakutuloksia keikkojen suosion ja sosiaalisen median hypen mukaan suosittujen some-palveluiden hengessä. 
 
 Frontlea lähdettiin rakentamaan Ruby on Rails -webbikehyksen päälle. Kehitin itse Frontlen front-end-puolta.
 

@@ -1,4 +1,4 @@
-name: Jekyll Bulma Github pages starter template
+name: Jekyll Start Bootstrap Github pages starter template
 markdown: kramdown
 
 permalink: /blog/:year/:month/:day/:title

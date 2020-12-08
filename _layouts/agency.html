@@ -15,6 +15,13 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/themes/agency/css/styles.css" rel="stylesheet" />
+    
+        <style>
+
+            p { color: #6c757d;}
+
+        </style>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -202,47 +209,40 @@
                     <h2 class="section-heading text-uppercase">Työkokemus</h2>
                     <h3 class="section-subheading text-muted">Viimeisin työkokemukseni ohjelmistoalalta</h3>
                 </div>
+
                 <ul class="timeline">
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="themes/agency/assets/img/about/4.jpg" alt="" /></div>
+
+
+                    {% assign jobs_in_order = site.jobs | sort: "order" %}
+
+                    {% for job in jobs_in_order %}
+
+                        {% assign mod = forloop.index | modulo: 2 %}
+                  
+                    <li class="{% if mod == 1 %}timeline-inverted{% else %} {% endif %}">
+                        
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="themes/agency/assets/img/about/{{ job.image }}" alt="" />
+                        </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Tammikuu 2021</h4>
-                                <h4 class="subheading">Uusi työ</h4>
+                                <h4>{{ job.subtitle }}</h4>
+                                <h4 class="subheading">{{ job.title }}</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body">
+                                
+                                <p class="text-muted">{{ job.excerpt }}</p>
+                            </div>
+                            <br />
+                            <div>
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">Lue lisää</a>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="themes/agency/assets/img/about/1.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2015-2020</h4>
-                                <h4 class="subheading">Intrinsic Oy</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="themes/agency/assets/img/about/2.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2013-2015</h4>
-                                <h4 class="subheading">Suomen E-tunnus Oy</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="themes/agency/assets/img/about/3.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2013</h4>
-                                <h4 class="subheading">Frontle keikkahakukone</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
+                    
+                    {% endfor %}
+
+
                 </ul>
             </div>
         </section>
@@ -259,8 +259,10 @@
                 
                 <div class="row text-center">
                     
+                    {% assign feats_in_order = site.feats | sort: "order" %}
 
-                    {% for f in site.feats %}
+
+                    {% for f in feats_in_order %}
 
 
                     <div class="col-md-4">

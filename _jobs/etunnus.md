@@ -1,7 +1,8 @@
 ---
 title: "Suomen E-tunnus Oy"
-subtitle: "( 16.8.2013 - 31.5.2015 )"
-order: b
+subtitle: "2013 - 2015"
+order: c
+image: "1.jpg"
 ---
 
 Syksyllä 2013 olin mukana tiimissä joka toteutti oma.e-tunnus.fi -verkkopalvelun. E-tunnus on niin kutsuttu laskutuspalvelu, jonka kautta voi laskuttaa työnsä ilman että tarvitsee perustaa omaa yritystä.
